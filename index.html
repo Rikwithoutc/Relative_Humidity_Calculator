@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humidity Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <h1 class="heading">Humidity Calculator</h1>
+        <div class="content">
+
+            <div class="card dry-bulb">
+                <label for="dry-bulb-temp">
+                    Dry Bulb Temperature: 
+                </label>
+                <input type="text" id="dry-bulb-temp">
+            </div>
+
+            <div class="card wet-bulb">
+                <label for="wet-bulb-temp">
+                    Wet Bulb Temperature:
+                </label>
+                <input type="text" id="wet-bulb-temp">
+            </div>
+            
+        </div>
+        <div class="btns">
+            <div class="btn unit" data-u="C">&deg;C</div>
+            <div class="btn reset">RESET</div>
+            <div class="btn submit">SUBMIT</div>
+        </div>
+        <div class="display">
+            <h2>Relative Humidity: </h2>
+            <div class="rel-hum-display"></div>
+        </div>
+    </div>
+
+</body>
+</html>

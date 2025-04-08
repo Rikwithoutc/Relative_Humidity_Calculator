@@ -1,0 +1,205 @@
+:root {
+    --bg-color: #343336;
+    --sec-color-1: #ffff00;
+    --sec-color-2: #ffb700;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    padding: 0.75rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: var(--bg-color);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    border: 2px solid var(--sec-color-1);
+    border-radius: 1rem;
+    align-items: center;
+    background: var(--bg-color);
+}
+
+.container > h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin: 1.5rem 0;
+    color: var(--sec-color-1);
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    /* gap: 1.2rem; */
+    justify-content: space-around;
+
+    /* background: red; */
+}
+
+.card {
+    border: 2px solid var(--sec-color-2);
+    padding: 1.5rem;
+    flex: 1;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.card > label {
+    display: block;
+    font-size: 2.5rem;
+    /* background: green; */
+    justify-content: center;
+    color: var(--sec-color-2)
+}
+
+.card > input {
+    padding: 1.3rem;
+    margin: 1.5rem 0;
+    height: 3.2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    font-size: 2.7rem;
+    background: var(--bg-color);
+    border: 1px solid var(--sec-color-2);
+    color: var(--sec-color-1)
+}
+
+.card > input:focus {
+    outline: none;
+} 
+
+.btns {
+    display: flex;
+    /* background: green; */
+    width: 100%;
+}
+.btn {
+    /* background: red; */
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    /* align-self: flex-end; */
+    margin: 1.3rem 2rem;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+    /* font-weight: 500; */
+}
+
+.unit {
+    border: 2px solid #050567;
+    background: rgb(0, 63, 236);
+    color: white;
+}
+
+.unit:hover {
+    background: rgb(2, 2, 124);
+}
+
+.reset {
+    border: 2px solid darkred;
+    background: red;
+    color:	#fdf3f2;
+}
+
+.reset:hover {
+    background: rgb(111, 6, 6);
+}
+
+.submit {
+    border: 2px solid darkgreen;
+    background: rgb(7, 235, 7);
+    color: white;
+}
+
+.submit:hover {
+    background:rgb(4, 119, 4);
+}
+
+.display {
+    width: 100%;
+    align-self: center;
+    flex: 1;
+    /* background: yellow; */
+    margin: 1.5rem;
+    display: flex;
+    flex-flow: column;
+    padding: 0 1.5rem;
+    /* border: 2px solid black; */
+
+}
+
+.display > h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--sec-color-1);
+}
+
+.rel-hum-display {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    border: 2px solid var(--sec-color-1);
+    border-radius: 0.5rem;
+    font-size: 5rem;
+    padding: 0 3rem;
+    color: rgb(0, 255, 0);
+    cursor: text;
+    min-width: 500px;
+}
+
+@media (max-width: 768px) {
+
+    @media (max-width: 768px) {
+        body {
+          font-size: 10px;
+        }
+      
+        .content {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .card {
+          width: 90%;
+          margin: 1rem auto;
+        }
+      
+        .btns {
+          flex-direction: column;
+          align-items: stretch;
+        }
+      
+        .btn {
+          width: 90%;
+          margin: 0.5rem auto;
+        }
+      
+        .rel-hum-display {
+          font-size: 3rem;
+          padding: 0 1rem;
+          min-width: 500px;
+
+        }
+      }
+      
+}
